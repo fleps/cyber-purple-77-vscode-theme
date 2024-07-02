@@ -37,17 +37,24 @@ This was carefully customized for:
 - JavaScript
 - TypeScript
 - React (JSX / TSX)
-- CSS and SCSS (they will look the same)
+- CSS and SCSS (they will look almost identical)
 - HTML
 - JSON
 - Markdown
 
-I tested some code samples from other languages, so it should still look OK for most of them, like `C#, Go, Java, PHP, Python and Vue (provided you have Vue extension highlight installed of course)`.  
+I tested some code samples from other languages, on the ***theme repository there is a "code-samples" folder*** that you can download to see how it looks for each language. It should still look OK for most of them, like `C#, Go, Java, PHP, Python and Vue` (provided you have Vue extension highlight installed of course).
+
 For other languages, it still look ok most of the time, whatever isn't grabbed by the tokes will have a almost white purple foreground, easily customized via `editor.tokenColorCustomizations`'.
 
-## Examples
+## More screenshots
 
+### JavaScript
 ![alt-text](./assets/CyberPurple77-js.png "JavaScript")
 
----
+### CSS
 ![alt-text](./assets/CyberPurple77-css.png "CSS")
+
+---
+
+If you like this theme, I appreciate if you [follow me on GitHub](https://github.com/fleps).
+
