@@ -1,0 +1,71 @@
+body {
+  background: linear-gradient(#2b2b2b, #000);
+}
+
+.cyber-city {
+  font-family: 'Cyberpunk 2077';
+}
+
+.cyber-city::before {
+  content: '';
+  display: block !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #000, #2b2b2b);
+  z-index: -1;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+}
+
+.cyber-city h1 {
+  font-size: 3em;
+  color: #f8f8f8;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cyber-city p {
+  color: #f8f8f8;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cyber-city a {
+  color: #f8f8f8;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.cyber-city a:hover {
+  color: #ff0000;
+}
+
+@keyframes neon-pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cyber-city .neon {
+  color: #ff0000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: neon-pulse 1s ease-in-out infinite alternate;
+}
+
+@media (max-width: 768px) {
+  .cyber-city h1 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .cyber-city h1 {
+    font-size: 1.5em;
+  }
+}

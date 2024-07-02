@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cyberpunk 2077</title>
+  </head>
+  <body>
+    <h1>Cyberpunk 2077</h1>
+
+    <form>
+      <label for="location">Location</label>
+      <input type="text" name="location" value="Neon City" />
+      <label for="birthDate">Birth Date:</label>
+      <input type="number" name="birthDate" value="2020" />
+      <label for="deathDate">Death Date:</label>
+      <input type="number" name="deathDate" value="2050" />
+      <label for="weaknesses">Weaknesses:</label>
+      <input type="checkbox" name="weaknesses" value="Sunlight" />
+      <input type="checkbox" name="weaknesses" value="Garlic" />
+      <input type="checkbox" name="weaknesses" value="Silver Bullet" />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      // ...there was a guy named Jack
+      const form = document.querySelector("form");
+      form.addEventListener("submit", (e) => {
+        const { birthDate, deathDate } = e.target;
+        const age = deathDate.value - birthDate.value;
+        const weaknesses = Array.from(document.querySelectorAll('input[name="weaknesses"]:checked')).map(x => x.value);
+        const location = document.querySelector('input[name="location"]').value;
+        console.log(`Location: ${location}, Age: ${age}, Weaknesses: ${weaknesses.join(', ')}`);
+      });
+    </script>
+  </body>
+</html>
