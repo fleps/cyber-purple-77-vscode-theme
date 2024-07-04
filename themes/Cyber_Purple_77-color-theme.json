@@ -302,6 +302,7 @@
         "entity.other.attribute",
         "entity.name.scope-resolution",
         "entity.name.class",
+        "storage.type",
         "storage.type.numeric.go",
         "storage.type.byte.go",
         "storage.type.boolean.go",
@@ -326,10 +327,11 @@
         "storage.type.generic.groovy",
         "storage.type.object.array.groovy",
         "storage.type.primitive.array.groovy",
-        "storage.type.primitive.groovy"
+        "storage.type.primitive.groovy",
+        "meta.class.identifier.java"
       ],
       "settings": {
-        "foreground": "#54b385"
+        "foreground": "#1CC4BB"
       }
     },
     {
@@ -342,7 +344,7 @@
         "entity.other.inherited-class"
       ],
       "settings": {
-        "foreground": "#54b385"
+        "foreground": "#1CC4BB"
       }
     },
     {
@@ -514,15 +516,19 @@
       }
     },
     {
-      "scope": ["variable.other.constant", "variable.other.readwrite", "variable.object.property", "variable.parameter", "variable.other.object"],
+      "scope": [
+        "variable.other.constant",
+        "variable.other.readwrite",
+        "variable.object.property",
+        "variable.parameter",
+        "variable.other.object",
+        "variable.other.definition.java",
+        "source.java",
+        "meta.method-call.java",
+        "variable.other.class.js"
+      ],
       "settings": {
         "foreground": "#e43897"
-      }
-    },
-    {
-      "scope": ["storage.type"],
-      "settings": {
-        "foreground": "#1cc4bb"
       }
     },
     {
@@ -701,7 +707,9 @@
         "punctuation.definition.parameters",
         "source.json.ments",
         "entity.other.attribute-name.pseudo-element",
-        "support.constant.vendored.property-value"
+        "support.constant.vendored.property-value",
+        "punctuation.section.block.begin.bracket.curly",
+        "punctuation.section.block.end.bracket.curly"
       ],
       "settings": {
         "foreground": "#895C9E"
@@ -739,10 +747,24 @@
         "string.unquoted",
         "meta.object-literal.key",
         "meta.template.expression",
-        "entity.name.tag.css"
+        "entity.name.tag.css",
+        "entity.name.tag.block.any.html",
+        "entity.name.tag.inline.any.html"
       ],
       "settings": {
         "foreground": "#fd7e08"
+      }
+    },
+    {
+      "scope": ["entity.name.tag.other.html"],
+      "settings": {
+        "foreground": "#13c6d3"
+      }
+    },
+    {
+      "scope": ["entity.name.tag.script.html"],
+      "settings": {
+        "foreground": "#719CEB"
       }
     },
     {
@@ -772,7 +794,7 @@
       }
     },
     {
-      "scope": ["punctuation.terminator.statement"],
+      "scope": ["punctuation.terminator"],
       "settings": {
         "foreground": "#C4BD59"
       }
@@ -965,15 +987,15 @@
     "editorWidget.resizeBorder": "#ff0077",
     "focusBorder": "#7d42a5",
     "foreground": "#9179bb",
-    "gitDecoration.addedResourceForeground": "#81b88b",
-    "gitDecoration.conflictingResourceForeground": "#6c6cc4",
-    "gitDecoration.deletedResourceForeground": "#c74e39",
-    "gitDecoration.ignoredResourceForeground": "#8c8c8c",
-    "gitDecoration.modifiedResourceForeground": "#e2c08d",
-    "gitDecoration.stageDeletedResourceForeground": "#c74e39",
-    "gitDecoration.stageModifiedResourceForeground": "#e2c08d",
-    "gitDecoration.submoduleResourceForeground": "#8db9e2",
-    "gitDecoration.untrackedResourceForeground": "#73c991",
+    "gitDecoration.addedResourceForeground": "#24d4ab",
+    "gitDecoration.conflictingResourceForeground": "#0ab1ff",
+    "gitDecoration.deletedResourceForeground": "#f51d5e",
+    "gitDecoration.ignoredResourceForeground": "#745b8b",
+    "gitDecoration.modifiedResourceForeground": "#ce79ff",
+    "gitDecoration.stageDeletedResourceForeground": "#f51d5e",
+    "gitDecoration.stageModifiedResourceForeground": "#ce79ff",
+    "gitDecoration.submoduleResourceForeground": "#0ab1ff",
+    "gitDecoration.untrackedResourceForeground": "#28ffcd",
     "icon.foreground": "#be5cf3",
     "input.background": "#33213a",
     "input.border": "#00000000",
