@@ -41,11 +41,11 @@ This was carefully customized for:
 - HTML
 - JSON
 - Markdown
-- Golang (basic tokens setup without any extension)
-- Java (basic tokens setup without any extension)
 - Shopify Liquid language (requires a Shopify extension for code highlighting)
 - Salesforce B2C SFCC (ISML / Demandware)
   - For full support, DON'T associate ISML with HTML, and install Prophet Extension to enable ISML syntax highlight.
+- Golang (basic tokens setup without any extension)
+- Java (basic tokens setup without any extension)
 
 I tested some code samples from other languages, on the ***theme repository there is a ["code-samples" folder](https://github.com/fleps/cyber-purple-77-vscode-theme/tree/main/code-samples)*** that you can download to see how it looks for each language. It should still look OK for most of them, like `C#, PHP, Python and Vue` (provided you have a Vue extension highlight installed of course).
 
