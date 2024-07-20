@@ -2,6 +2,11 @@
 
 # Change Log
 
+## v1.2.0 - Jul 20, 2024
+
+- Added better Golang support
+- Updated Readme/Lang support info
+
 ## v1.1.0 - Jun 3, 2024
 
 - `gitDecoration` file name foreground colors adjusted to follow the theme style better (apply to the filename on the sidebar and the tabs).
