@@ -2,7 +2,7 @@
   "name": "cyber-purple-77",
   "displayName": "Cyber Purple 77",
   "description": "Theme slightly inspired on Cyberpunk 2077 colors, but with more purple",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "engines": {
     "vscode": "^1.80.0"
   },
@@ -12,14 +12,26 @@
   "license": "MIT",
   "icon": "assets/icon.png",
   "galleryBanner": {
-    "color": "#21004F",
+    "color": "#18092c",
     "theme": "dark"
   },
   "keywords": [
     "cyberpunk",
     "dark",
     "purple",
-    "theme"
+    "theme",
+    "html",
+    "css",
+    "scss",
+    "json",
+    "javascript",
+    "typescript",
+    "react",
+    "vue",
+    "shopify",
+    "liquid",
+    "ISML",
+    "Golang"
   ],
   "publisher": "flep",
   "repository": {
