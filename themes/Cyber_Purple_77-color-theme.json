@@ -232,11 +232,7 @@
       }
     },
     {
-      "scope": [
-        "support.type.vendored.property-name",
-        "support.type.property-name",
-        "source.coffee.embedded"
-      ],
+      "scope": ["support.type.property-name", "source.coffee.embedded"],
       "settings": {
         "foreground": "#9CDCFE"
       }
@@ -569,7 +565,11 @@
         "meta.method-call.java",
         "variable.other.class.js",
         "variable.other.go",
-        "variable.other.assignment.go"
+        "variable.other.assignment.go",
+        "variable.argument.css",
+        "variable.css",
+        "variable.scss",
+        "constant.language.json.comments"
       ],
       "settings": {
         "foreground": "#e43897"
@@ -669,7 +669,6 @@
     {
       "scope": [
         "constant.numeric.css",
-        "keyword.control.at-rule.include.scss",
         "constant.other.object.key.js string.quoted.double.js"
       ],
       "settings": {
@@ -970,6 +969,19 @@
       "settings": {
         "foreground": "#B267E6"
       }
+    },
+    {
+      "scope": "punctuation.definition.entity.css",
+      "settings": {
+        "foreground": "#ffbb00"
+      }
+    },
+    {
+      "scope": "support.type.vendored.property-name",
+      "settings": {
+        "foreground": "#ff92ed",
+        "fontStyle": "italic"
+      }
     }
   ],
   "colors": {
@@ -1020,7 +1032,7 @@
     "editor.lineHighlightBorder": "#22182a",
     "editor.rangeHighlightBackground": "#ffffff0b",
     "editor.rangeHighlightBorder": "#ffffff00",
-    "editor.selectionBackground": "#411a4b8f",
+    "editor.selectionBackground": "#2d1d3a",
     "editor.selectionHighlightBackground": "#473358de",
     "editor.selectionHighlightBorder": "#703b9d",
     "editor.wordHighlightBackground": "#473358a3",
@@ -1054,6 +1066,8 @@
     "editorInfo.background": "#4490BF00",
     "editorInfo.border": "#4490BF00",
     "editorInfo.foreground": "#2ca3a3",
+    "editorInlayHint.background": "#440479",
+    "editorInlayHint.typeForeground": "#aeb100",
     "editorLineNumber.activeForeground": "#fff700",
     "editorLineNumber.foreground": "#6f2d6b",
     "editorLink.activeForeground": "#ff0077",

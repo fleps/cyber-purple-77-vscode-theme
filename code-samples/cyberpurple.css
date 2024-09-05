@@ -1,3 +1,11 @@
+:root {
+  --alpha-button-background: 1;
+  --alpha-button-border: 1;
+  --alpha-link: 0.85;
+  --alpha-badge-border: 0.1;
+  --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 body {
   background: linear-gradient(#2b2b2b, #000);
 }
@@ -22,12 +30,12 @@ body {
 .cyber-city h1 {
   font-size: 3em;
   color: #f8f8f8;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: var(--text-shadow);
 }
 
 .cyber-city p {
   color: #f8f8f8;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: var(--text-shadow);
 }
 
 .cyber-city a {
@@ -44,9 +52,11 @@ body {
   0% {
     opacity: 1;
   }
+
   50% {
     opacity: 0.5;
   }
+
   100% {
     opacity: 1;
   }
