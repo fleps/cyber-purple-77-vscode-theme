@@ -1,0 +1,222 @@
+/*------------------------------------*\
+  #TYPOGRAPHY
+\*------------------------------------*/
+
+// Font families
+$font-family-roboto: 'Roboto';
+$font-family-sans: 'Roboto', sans-serif;
+$font-family-sans-secondary: 'Roboto', sans-serif;
+$font-family-sans-tertiary: 'Roboto', sans-serif;
+$font-family-serif: Times, serif;
+$font-family-cursive: cursive;
+
+// Larger than headings
+$font-size-yotta: 8.875rem; // 142px
+$font-size-zetta: 7.375rem; // 118px
+$font-size-exa: 6.25rem; // 100px
+
+// Headings
+$font-size-h1: 5.125rem; // 82px
+$font-size-h2: 4.375rem; // 70px
+$font-size-h3: 3.5rem; // 56px
+$font-size-h4: 3rem; // 48px
+$font-size-h5: 2.5rem; // 40px
+$font-size-h6: 2rem; // 32px
+
+/*------------------------------------*\
+  #COLORS
+\*------------------------------------*/
+
+$color-white: #fff;
+$color-black: #000;
+
+//GREYSCALE COLORS
+$color-grey-1: #f9f9f9;
+$color-grey-2: #eee;
+$color-grey-3: #cccccc;
+$color-grey-4: #97a1b0;
+$color-grey-5: #727272;
+$color-grey-6: #595959;
+$color-grey-7: #111111;
+$color-grey-8: #788087;
+$color-grey-9: #343a40;
+$color-grey-10: #a6b0b9;
+$color-grey-11: #f2f4f6;
+$color-grey-12: #e9ecef;
+$color-grey-13: #f2f3f4;
+$color-grey-14: #c8ced4;
+$color-grey-15: #f8f9fa;
+
+$color-pink: #ef5f96;
+$color-red-light: #ec1f35;
+$color-red: #e35d6a;
+$color-red-saturated: #fc0221;
+$color-blue-light: #cde2f5;
+$color-blue: #0084ff;
+$color-green: #00c57d;
+$color-yellow: #ffe800;
+$color-golden-yellow: #fce700;
+$color-butter-cup: #f1a51f;
+$color-beige: #070706;
+$color-body-copy: #333333;
+$color-orange: #ff4d00;
+
+//SOCIAL MEDIA COLORS
+$color-facebook-blue: #3b5998;
+$color-google-blue: #4285f4;
+$color-google-red: #db4437;
+$color-instagram-pink: #c62a81;
+$color-instagram-orange: #f06430;
+
+$color-paypal-blue: #009cde;
+$color-paypal-silver: #eeeeee;
+
+$color-primary: $color-yellow;
+$color-secondary: $color-black;
+$color-tertiary: $color-white;
+
+$color-accent-primary: #fae400;
+$color-accent-secondary: #daff79;
+$color-accent-tertiary: #28baff;
+
+$colors: (
+  white: $color-white,
+  black: $color-black,
+
+  //GREYSCALE COLORS
+  grey-1: $color-grey-1,
+  grey-2: $color-grey-2,
+  grey-3: $color-grey-3,
+  grey-4: $color-grey-4,
+  grey-5: $color-grey-5,
+  grey-6: $color-grey-6,
+  grey-7: $color-grey-7,
+  grey-8: $color-grey-8,
+  grey-9: $color-grey-9,
+  grey-10: $color-grey-10,
+  grey-11: $color-grey-11,
+  grey-12: $color-grey-12,
+  grey-13: $color-grey-13,
+  grey-14: $color-grey-14,
+  grey-15: $color-grey-15,
+
+  pink: $color-pink,
+  red-light: $color-red-light,
+  red: $color-red,
+  blue: $color-blue,
+  blue-light: $color-blue-light,
+  navy: darken($color-blue, 35%),
+  green: $color-green,
+  yellow: $color-yellow,
+  beige: $color-beige,
+  body-copy: $color-body-copy,
+  orange: $color-orange,
+
+  //SOCIAL MEDIA COLORS
+  facebook-blue: $color-facebook-blue,
+  google-blue: $color-google-blue,
+  google-red: $color-google-red,
+  instagram-pink: $color-instagram-pink,
+  instagram-orange: $color-instagram-orange,
+
+  paypal-blue: $color-paypal-blue,
+  paypal-silver: $color-paypal-silver,
+
+  primary: $color-primary,
+  secondary: $color-secondary,
+  tertiary: $color-tertiary,
+
+  accent-primary: $color-accent-primary,
+  accent-secondary: $color-accent-secondary,
+  accent-tertiary: $color-accent-tertiary,
+
+  error: $color-red,
+  success: $color-green,
+);
+
+/*------------------------------------*\
+  #HEADER-DEFAULTS
+\*------------------------------------*/
+$header-nav-bg: var(--header-nav-bg, $color-body-background);
+$header-nav-color: var(--header-nav-color, 'currentColor');
+$header-nav-panel-bg: var(--header-nav-panel-bg, $color-body-background);
+$header-nav-panel-color: var(--header-nav-panel-color, 'currentColor');
+
+/*------------------------------------*\
+  #FLEX-GRID
+\*------------------------------------*/
+
+$fg-class-grid: 'flex';
+$fg-use-off-half: false;
+
+$fg-gutter: (
+  xs: $gutter-inner-deci,
+  lg: $gutter-inner,
+);
+
+$fg-breakpoints: (
+  xs: 0,
+  sm: map-get($breakpoints, xsmall),
+  md: map-get($breakpoints, small) + map-get($breakpoints, unit),
+  lg: map-get($breakpoints, medium) + map-get($breakpoints, unit),
+  xl: map-get($breakpoints, xmedium) + map-get($breakpoints, unit),
+);
+
+/**
+ * Responsive Mixin
+ * This mixin is designed for a _cleaner_ first approach
+ * This means that css isn't overridden but rather replaced for
+ * different viewport widths; making it easier to inspect/debug css
+ *
+ * Usage:
+ * @include media-query(exclude-medium)    { ... }
+ * @include media-query(medium-up-to-site) 	   { ... }
+ * ... etc
+ */
+@function getQueryName($query, $search, $type: start) {
+  @if $type == end {
+    $brkptEnd: str-slice($query, str-index($query, $search) + str-length($search));
+
+    @return map-get($breakpoints, $brkptEnd);
+  } @else {
+    $brkptStart: str-slice($query, 0, str-index($query, $search) - 1);
+
+    @return map-get($breakpoints, $brkptStart) + map-get($breakpoints, unit);
+  }
+}
+
+@mixin media-query($query) {
+  $media-append: '(max-width: #{map-get($breakpoints, $query)})';
+
+  @if str-index($query, '-up-to-') {
+    $lowerBrkPt: getQueryName($query, '-up-to-');
+    $higherBrkPt: getQueryName($query, '-up-to-', end);
+
+    $media-append: '(min-width: #{$lowerBrkPt}) and (max-width: #{$higherBrkPt})';
+  } @else if str-index($query, '-up') {
+    $lowerBrkPt: getQueryName($query, '-up');
+
+    $media-append: '(min-width: #{$lowerBrkPt})';
+  }
+
+  @media #{$media-append} {
+    @content;
+  }
+}
+
+/// Replace `$search` with `$replace` in `$string`
+/// @author Hugo Giraudel
+/// @param {String} $string - Initial string
+/// @param {String} $search - Substring to replace
+/// @param {String} $replace ('') - New value
+/// @return {String} - Updated string
+@function str-replace($string, $search, $replace: '') {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace +
+      str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+
+  @return $string;
+}
